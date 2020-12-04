@@ -1,4 +1,4 @@
-require './character.rb'
+require './character.rb' 
 
 class Brave < Character
     def attack(monster)
@@ -10,4 +10,6 @@ class Brave < Character
 
         monster.hp = 0 if  monster.hp <= 0
     end
+
+    
 end

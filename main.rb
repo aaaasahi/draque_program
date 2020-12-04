@@ -6,17 +6,11 @@ monster = Monster.new(name: "アークデーモン", hp: 210, offense: 140, defe
 #monster = Monster.new(name: "シドー", hp: 250, offense: 255, defense: 255)
 
 
-
-loop do
+while brave.hp > 0 && monster.hp > 0 do
     brave.attack(monster)
-    monster.attack(brave)
-    puts <<~TEXT
-    *=*=*=*=*=*=*=*=*=*=*
-    【#{brave.name}】HP: #{brave.hp}
-    【#{monster.name}】HP: #{monster.hp}
-    *=*=*=*=*=*=*=*=*=*=*
-    TEXT
     break if monster.hp <= 0
+
+    monster.attack(brave)
     break if brave.hp <= 0
 end
 

@@ -1,4 +1,4 @@
-class Character
+class Character 
     attr_reader :name, :offense, :defense
     attr_accessor :hp
     def initialize(**params)
@@ -7,4 +7,7 @@ class Character
         @offense = params[:offense]
         @defense = params[:defense]
     end
+
+    
+
 end
