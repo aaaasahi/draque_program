@@ -8,7 +8,7 @@ class Monster < Character
 
         brave.hp -= damage
 
-        brave.hp = 0 if  brave.hp <= 0
+        brave.hp = 0 if brave.hp <= 0
     end
-
+    
 end

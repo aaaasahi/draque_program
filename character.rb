@@ -8,6 +8,12 @@ class Character
         @defense = params[:defense]
     end
 
-    
+    def self.display_status(*characters)
+        puts "*=*=*=*=*=*=*=*=*=*=*"
+        characters.each do |character|
+            puts "【#{character.name}】HP: #{character.hp}"
+        end
+        puts "*=*=*=*=*=*=*=*=*=*=*"
+    end
 
 end
